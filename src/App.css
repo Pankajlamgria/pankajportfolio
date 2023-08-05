@@ -1,0 +1,244 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.navlist ul{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navlist{
+  width: 70%;
+}
+.navlist ul a{
+  transition: .3s;
+  color:black;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* padding: 4px; */
+
+}
+
+.navlist ul a:hover{
+  
+  text-shadow: 1px 2px 2px rgb(66, 66, 66);
+
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0px .2px 3px rgb(85, 85, 85);
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  top: 0;
+}
+.navelements{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+}
+.portfolioname{
+  color: white;
+  padding-bottom: 3px;
+  font-weight: 700;
+  background:linear-gradient(to top,rgb(233, 42, 42),rgb(255, 255, 37)) ;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 4px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+/* THIS IS A HOME SECTION */
+
+.homepage{
+  margin-top: 4rem;
+  padding-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 520px;
+  /* background-color: aliceblue; */
+}
+.container{
+  background-color: transparent;
+  width: 60%;
+}
+.firstsec{
+  display: flex;
+  flex-flow: row wrap ;
+  justify-content: space-between;
+  transition: .8s;
+}
+.imgsec{
+  animation: floatimg 5s ease forwards infinite;
+  width:320px;
+  height: 320px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 2px 2px 20px grey;
+  /* box-shadow: 2px 2px 70px rgb(226, 80, 23); */
+}
+.imgsec:hover.imgsec img{
+  scale: 1.1;
+}
+.imgsec img{
+  transition: .6s;
+  width: 100%;
+  height: 100%;
+}
+.textarea{
+  width: 50%;
+  padding-top: 2%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#heading{
+  font-size: 40px;
+  font-family: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 1rem;
+}
+#homecontent{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+#resume{
+  display: block;
+  cursor: pointer;
+  margin-top: 1rem;
+  height: 35px;
+  width: 100px;
+  background:linear-gradient(to top,rgb(233, 42, 42),rgb(255, 255, 37)) ;
+  box-shadow: 2px 2px 4px rgb(255, 123, 0);
+  color:white;
+  font-size:18px;
+  border-color: wheat;
+  border-radius: 4px;
+}
+.socialmedia{
+  display: flex;
+  margin-top: 3rem;
+}
+.socialicon{
+  margin-right: 1.5rem;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: 2px solid orange;
+  border-radius: 8px;
+  box-shadow: 2px 2px 14px orange;
+}
+
+.socialicon box-icon{
+  width: 100%;
+  height: 100%;
+  transition: .3s;
+}
+.socialicon box-icon:hover{
+  animation: rotating .8s ease forwards 1;
+}
+/* About Section Begin */
+
+.aboutsec{
+  height: 540px;
+  background-color: aliceblue;
+  display: flex;
+}
+.aboutimg{
+  margin-top: 4%;
+  margin-left: 2%;
+  width: 580px;
+  height: 400px;
+}
+.abouttext{
+  width: 32%;
+  margin-left: 10%;
+  padding-top: 10%;
+  font-size: 18px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.skillcover{
+  
+  margin-right: 1rem;
+  height: 40px;
+  width: 40px;
+}
+.skillcover img{
+  width: 100%;
+  height: 100%;
+}
+.skillcover:hover.skillcover img{
+  animation: flikering .1s ease forwards 1;
+
+}
+.skillicon{
+  margin-top: 4rem;
+  display: flex;
+}
+.aboutimg img{
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.projects{
+  height: 540px;
+  /* background-color: aliceblue; */
+}
+@keyframes floatimg {
+  0%{
+      transform: translateY(0);
+  }
+  50%{
+      transform: translateY(-40px);
+  }
+  100%{
+      transform: translateY(0px);
+  }
+}
+@keyframes rotating {
+  0%{
+      transform: rotateY(0deg);
+  }
+  /* 50%{
+      transform: translateY(-40px);
+  } */
+  100%{
+      transform: rotateY(360deg);
+  }
+}
+@keyframes flikering {
+  0%{
+      transform: translateX(0);
+  }
+  20%{
+      transform: translateX(-6px);
+  }
+  40%{
+      transform: translateX(6px);
+  }
+  60%{
+      transform: translateX(-6px);
+  }
+  80%{
+      transform: translateX(6px);
+  }
+  100%{
+      transform: translateX(0px);
+  }
+}
