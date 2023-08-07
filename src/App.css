@@ -2,6 +2,10 @@
   margin: 0px;
   padding: 0px;
 }
+html {
+  scroll-behavior: smooth;
+ }
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
 .navlist ul{
   display: flex;
   flex-direction: row;
@@ -13,7 +17,7 @@
   width: 70%;
 }
 .navlist ul a{
-  transition: .3s;
+  transition: .2s;
   color:black;
   text-decoration: none;
   font-size: 20px;
@@ -22,10 +26,23 @@
 
 }
 
-.navlist ul a:hover{
-  
-  text-shadow: 1px 2px 2px rgb(66, 66, 66);
-
+.navlist ul li{
+  width: 6rem;
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .2s;
+  height: 0rem;
+  border-radius: 6px;
+}
+.navlist ul li:hover{
+  background: #e5e5e5;
+  height: 2.3rem;
+}
+.navbar ul li a:hover{
+  font-size: 22px;
+  color: white;
 }
 .navbar{
   display: flex;
@@ -39,6 +56,7 @@
   position: fixed;
   width: 100%;
   background-color: white;
+  opacity: .9;
   top: 0;
 }
 .navelements{
@@ -88,7 +106,8 @@
   height: 320px;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 2px 2px 20px grey;
+  border: 1px solid orange;
+  box-shadow: 2px 2px 38px orange;
   /* box-shadow: 2px 2px 70px rgb(226, 80, 23); */
 }
 .imgsec:hover.imgsec img{
@@ -195,10 +214,246 @@
 }
 
 
-
+/* project section begin */
+#projectsheading{
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  font-size: 33px;
+  /* color: rgb(156, 209, 255); */
+  /* font-size: 72px; */
+  background: -webkit-linear-gradient(rgb(237, 241, 12), rgb(221, 87, 9));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .projects{
+  height: auto;
+  padding: 2rem;
+  padding-top: 5rem;
+
+}
+.projectsbox{
+  width: 60%;
+  position: relative;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom:4rem ;
+}
+.projectvideo{
+  width: 59%;
+  border: 1px solid grey;
+
+}
+.projectvideo img{
+  height: 100%;
+  width: 100%;
+}
+.projectdetials{
+  display: flex;
+  flex-direction:column ;
+  align-items:center;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  margin-left: 15px;
+  width: 47%;
+}
+.projectdetials p h4{
+  color: #7c6cf1;
+  margin-bottom: 1rem;
+  position: relative;
+  right: 6px;
+  text-align: center;
+  font-size: 22px;
+}
+.projectallcover{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.leftside{
+  right: 10%;
+}
+#projectsecond,#projectfourth{
+  color: rgb(141, 141, 141);
+  left: 10%;
+}
+.rightside{
+  left: 10%;
+}
+#projectthird .projectdetials h4{
+  color: rgb(64, 161, 241);
+}
+#forthirdframe p{
+  color :rgb(113,182,238);
+}
+#projectsecond p h4,#projectfourth p h4{
+   color: black;
+}
+#forforthframe p{
+  color: black;
+}
+.frameworksicon{
+  color: #9184f3;
+  width: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.frameworksicon a{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.frameworksicon p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #9184f3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 7px;
+  width: 80px;
+  cursor: pointer;
+}
+.websiteimg{
+  width: 25px;
+  margin-left: 5px;
+  height:25px ;
+}
+#forsecondframe p{
+  color: black;
+}
+
+/* contact section begin */
+.contactsection{
   height: 540px;
-  /* background-color: aliceblue; */
+  width: 100%;
+  /* margin-bottom: 1rem; */
+  background: linear-gradient(to bottom, white,rgb(159, 204, 243));
+}
+#contactheading{
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  right: 5%;
+  margin-top: 4rem;
+  font-family: 'Roboto Flex', sans-serif;
+}
+.othercontent{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  position: relative;
+}
+.contanctflexbox{
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+.contactdetails{
+  width: 25%;
+  background-color: white;
+  position: relative;
+  border-radius: 8px;
+  left:12%;
+  /* padding-top: 5px; */
+  box-shadow: -1px -1px 4px rgb(151, 207, 255);
+  height: auto;
+  
+}
+.quote{
+  margin-left: 6%;
+  margin-top: 6%;
+  width: 45%;
+}
+.quote h2{
+  color: white;
+  font-size:38px;
+  margin-bottom: 12px;
+  
+}
+.quote p{
+  font-size: 17px;
+}
+.contactdetails form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+  position: relative;
+}
+form label{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+form input,textarea{
+  border: 1px solid rgb(156, 203, 245);
+  border-radius: 4px;
+  font-size: 17px;
+  width: 80%;
+  margin-top: 1rem;
+  background-color: rgb(244, 247, 253) ;
+  padding: 3px;
+  padding-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form input{
+  height: 21px;
+}
+#formsubmitbtn{
+  margin-top: 4px;
+  margin-right: 64%;
+  height: 25px;
+  width: 60px;
+  background-color: rgb(99, 181, 252);
+  cursor: pointer;
+  border-radius: 4px;
+  color: white; 
+  border: none;
+}
+.mailsec{
+  display: flex;
+  margin-top: 2rem;
+  background-color: white;
+  width: 44%;
+  border-radius: 8px;
+}
+.mailimg{
+  width: 50px;
+  height: 50px;
+  margin-right: 4px;
+}
+.mailimg img{
+  width: 100%;
+  height: 100%;
+}
+.mailsec a{
+  text-decoration: none;
+  color: rgb(80, 161, 231);
+}
+#successbox{
+background-color: rgb(23, 209, 23);
+position: fixed;
+top: 15%;
+left: 40%;
+border-radius: 4px;
+padding-left: 4px;
+width: 150px;
+height: 30px;
+color: white;
+font-size: 21px;
+display: flex;
+justify-content: space-around;
+transition: .3s;
+}
+.cancel{
+  cursor: pointer;
 }
 @keyframes floatimg {
   0%{
@@ -215,9 +470,7 @@
   0%{
       transform: rotateY(0deg);
   }
-  /* 50%{
-      transform: translateY(-40px);
-  } */
+
   100%{
       transform: rotateY(360deg);
   }
@@ -242,3 +495,15 @@
       transform: translateX(0px);
   }
 }
+@keyframes animate3d {
+  
+}
+/* @keyframes bringtonormal {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: rotate3d(0,0,0,0deg);
+  }
+} */
